@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Login</title>
+</head>
+<body>
+    <script>
+        const totalUtang = 1000;
+        const solved = totalUtang;
+        const unsolved = 800;
+        const tooMuch = 1200;
+
+        function bayarUtang (jumlahBayar) {
+            if (jumlahBayar < unsolved) {
+                console.log("Masih ada sisa utang sebesar", totalUtang - jumlahBayar, "Ayo segera dilunasi");
+            } 
+            else if (jumlahBayar === solved) {
+                console.log("Utang lunas! Thanks");
+            }
+            else if (jumlahBayar > solved) {
+                console.log("Pembayaran terlalu banyak sebesar",jumlahBayar - totalUtang,"Utang lunas!");
+            }
+       }
+
+       bayarUtang(700);
+       bayarUtang(1000);
+       bayarUtang(1500);
+    </script>
+    
+</body>
+</html>
